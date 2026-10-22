@@ -1,0 +1,32 @@
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+secrets/
+
+# SSH private keys
+id_rsa
+id_ed25519
+
+# Logs and temporary files
+*.log
+*.tmp
+*.swp
+*~
+
+# Operating system files
+.DS_Store
+Thumbs.db
+
+# SSH private keys and sensitive credentials
+inux-server-deplo
+inux-server-deplo.pub
+*.pem
+*.key
+*.pfx
+.env
+.env.*
