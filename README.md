@@ -1,60 +1,192 @@
 # Linux Server Deployment Lab
 
-## Overview
+## 1. Project Overview
 
-This project demonstrates practical Linux system administration,
-network configuration, secure remote access, firewall management,
-and web server deployment on Ubuntu Linux.
+This repository documents a practical Linux Server Deployment Lab focused on Linux system administration, networking, security, and web server deployment.
 
-## Objectives
+The project was implemented using an Ubuntu Linux virtual machine hosted on VMware. It demonstrates practical skills in managing Linux systems, configuring network services, securing remote access, managing firewall rules, and deploying an Nginx web server.
 
-- Perform Linux command-line operations.
-- Manage files, permissions, users, and groups.
-- Inspect and manage Linux processes and services.
+## 2. Project Objectives
+
+The main objectives of this project were to:
+
+- Practice Linux command-line operations.
+- Manage Linux users, groups, files, and permissions.
+- Monitor and manage processes and system services.
+- Understand Linux networking, IP addressing, DNS, and routing.
 - Configure and test SSH remote access.
-- Understand IP addressing, routing, DNS, and network ports.
-- Configure a host-based firewall.
-- Deploy an Nginx web server.
-- Validate service availability and network connectivity.
-- Document the implementation and testing results.
+- Apply firewall rules using UFW.
+- Deploy and manage an Nginx web server.
+- Test network connectivity and service availability.
+- Document the implementation and testing process.
 
-## Lab Environment
+## 3. Lab Environment
 
 | Component | Configuration |
 |---|---|
 | Operating System | Ubuntu 24.04.3 LTS |
-| Environment | VMware virtual machine |
-| Hostname | dm-test-VMware20-1 |
-| Server IP | 192.168.1.56 |
-| SSH Port | TCP 22 |
+| Virtualization Platform | VMware |
+| Virtual Machine | dm-test-VMware20-1 |
+| Username | dm-test |
+| Server IP Address | 192.168.1.56 |
+| Web Server | Nginx |
+| Web Server Port | 8080 |
+| Web Application | HTML5 UP Miniport Template |
 | Version Control | Git |
+| Repository Hosting | GitHub |
 
-## Project Structure
+## 4. Practical Implementation
 
-- `docs/` - Implementation documentation and test results.
-- `scripts/` - Supporting administration and validation scripts.
-- `configs/` - Sanitized configuration examples.
-- `screenshots/` - Evidence of implementation and testing.
+### Phase 1: Linux Command-Line Operations
 
-## Implementation Plan
+Practiced Linux commands for:
 
-1. Inspect the Linux server environment.
-2. Practice Linux administration and permissions.
-3. Validate networking, routing, and DNS.
-4. Review and secure SSH access.
-5. Configure and test the firewall.
-6. Deploy an Nginx web server.
-7. Test service availability and connectivity.
-8. Document results and publish the project to GitHub.
+- Navigating the Linux filesystem.
+- Creating, copying, moving, and deleting files and directories.
+- Checking system information.
+- Managing files from the terminal.
 
-## Security
+### Phase 2: Users, Groups, and Permissions
 
-No passwords, private SSH keys, access tokens, or other secrets
-should be committed to this repository.
+Practiced Linux user and group administration, including:
 
-Configuration examples must be reviewed and sanitized before publication.
+- Creating users and groups.
+- Managing user memberships.
+- Configuring file and directory ownership.
+- Applying Linux permissions using chmod and chown.
 
-## Status
+### Phase 3: Process and Service Management
 
-Initial server inventory completed.
-Implementation and validation are in progress.
+Worked with Linux processes and system services, including:
+
+- Inspecting running processes.
+- Monitoring system activity.
+- Managing services using systemctl.
+- Reviewing service logs using journalctl.
+- Creating and managing a custom systemd service.
+
+### Phase 4: Networking and Security
+
+Performed Linux networking and security tasks, including:
+
+- Checking IP address configuration.
+- Inspecting network interfaces and routing.
+- Testing DNS resolution and network connectivity.
+- Configuring SSH remote access.
+- Working with SSH key-based authentication.
+- Managing firewall rules using UFW.
+
+### Phase 5: Nginx Web Server Deployment
+
+Deployed an Nginx web server on the Ubuntu virtual machine.
+
+Deployment details:
+
+- Server IP: `192.168.1.56`
+- Web server: Nginx
+- Listening port: `8080`
+- Website template: HTML5 UP Miniport
+- Original website source directory: `/home/dm-test/Downloads/html5up-miniport/`
+
+The deployed website is accessed through:
+
+**http://192.168.1.56:8080**
+
+### Phase 6: Testing and Validation
+
+Performed practical checks to verify system configuration and service availability.
+
+Examples include:
+
+- Checking service status.
+- Inspecting listening network ports.
+- Testing website accessibility.
+- Checking network connectivity.
+- Reviewing system and service logs.
+
+Refer to the documentation folder for implementation details and validation records.
+
+## 5. Project Structure
+
+```text
+linux-server-deployment-lab/
+│
+├── README.md
+├── .gitignore
+│
+├── docs/
+│   ├── 01-server-inventory.md
+│   ├── 02-linux-administration.md
+│   ├── 03-networking.md
+│   ├── 04-ssh-security.md
+│   ├── 05-firewall.md
+│   ├── 06-nginx-deployment.md
+│   └── 07-testing-and-validation.md
+│
+├── configurations/
+│   └── devops-lab.service
+│
+├── scripts/
+│   └── monitor.sh
+│
+└── screenshots/
+    ├── linux-server/
+    ├── networking/
+    ├── firewall/
+    └── nginx/
+```
+
+## 6. Tools and Technologies
+
+- Ubuntu Linux 24.04 LTS
+- VMware
+- Nginx
+- OpenSSH
+- UFW Firewall
+- systemd
+- Bash scripting
+- Git
+- GitHub
+
+## 7. Security Considerations
+
+Security was considered throughout the implementation.
+
+- SSH remote access was configured and tested.
+- Firewall rules were reviewed.
+- Sensitive credentials and private SSH keys are excluded from version control.
+- The `.gitignore` file helps prevent accidental publication of sensitive files.
+- Configuration files should be reviewed and sanitized before publication.
+
+**Important:** Never commit private SSH keys, passwords, access tokens, or other confidential information to this repository.
+
+## 8. Learning Outcomes
+
+Through this practical lab, I gained hands-on experience in:
+
+- Linux server administration.
+- User and permission management.
+- Process and service management.
+- Network configuration and troubleshooting.
+- SSH security.
+- Firewall administration.
+- Nginx web server deployment.
+- Bash scripting.
+- Git and GitHub version control.
+
+## 9. Repository
+
+GitHub Repository:
+
+https://github.com/Auguchris/linux-server-deployment-lab
+
+## 10. Project Status
+
+The practical implementation and documentation for the Linux Server Deployment Lab have been prepared for review and submission.
+
+---
+
+**Author:** Augustin Ndayambaje  
+**Project:** Linux Server Deployment Lab  
+**Environment:** Ubuntu Linux on VMware# Linux Server Deployment Lab
+
